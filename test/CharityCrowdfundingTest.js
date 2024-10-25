@@ -5,7 +5,6 @@ describe("CharityCrowdfunding", function () {
   let CharityCrowdfunding, crowdfunding;
 
   beforeEach(async function () {
-    // Deploy the CharityCrowdfunding contract
     CharityCrowdfunding = await ethers.getContractFactory("CharityCrowdfunding");
     crowdfunding = await CharityCrowdfunding.deploy();
     await crowdfunding.deployed();
